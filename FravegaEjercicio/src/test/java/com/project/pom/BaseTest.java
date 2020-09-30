@@ -10,7 +10,7 @@ public abstract class BaseTest {
 	String URL = "https://www.fravega.com"; 
 	
 	@Before
-	public void setUp() throws Exception {
+	public void SetUp() throws Exception {
 		Driver.Init();
 		Driver.GetIntance().get(URL);
 		Driver.GetIntance().manage().window().maximize();
